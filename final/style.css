@@ -1,0 +1,83 @@
+video {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    z-index: -1;
+}
+@font-face {
+    font-family: 'Lulo Clean';
+    src: url('Lulo-Clean/Lulo\ Clean\ One\ Bold.otf') format('opentype')
+  }
+body {
+    font-family: 'Gill Sans', 'Futura', 'Trebuchet MS', sans-serif;
+    font-weight: 300;
+    color: rgb(0, 0, 0);
+    background: url(star_background.jpg) rgba(231, 213, 199, 1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+.header {
+    width: 100%;
+    text-align: center;
+    font-family: 'Lulo Clean', 'Gill Sans', 'Trebuchet MS', sans-serif;
+    text-transform: uppercase;
+}
+@keyframes navigation {
+    0% {
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    100% {
+        opacity: 0.85;
+    }
+}
+.navigation {
+    color: rgb(0, 0, 0);
+    position: fixed;
+    top: 30px;
+    left: 20px;
+    line-height: 30px;
+    opacity: 1;
+}
+.navigation.anim {
+    animation-name: navigation;
+    animation-duration: 1s;
+    animation-timing-function: steps(1, start);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+.navigation a {
+    text-decoration: none;
+    text-transform: lowercase;
+    color: rgb(0, 0, 0);
+}
+#star1 {
+    visibility: hidden;
+    display: inline;
+}
+#star2 {
+    visibility: hidden;
+    display: inline;
+}
+#star3 {
+    visibility: hidden;
+    display: inline;
+}
+.content {
+    position: fixed;
+    width: 70%;
+    height: 100vh;
+    top: 30px;
+    overflow: scroll;
+}
