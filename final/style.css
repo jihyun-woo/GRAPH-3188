@@ -9,7 +9,7 @@ video {
 }
 @font-face {
     font-family: 'Lulo Clean';
-    src: url('Lulo-Clean/Lulo\ Clean\ One\ Bold.otf') format('opentype')
+    src: url('Lulo-Clean/Lulo\ Clean\ One\ Bold.otf') format('opentype');
   }
 body {
     font-family: 'Gill Sans', 'Futura', 'Trebuchet MS', sans-serif;
@@ -20,14 +20,13 @@ body {
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    width: 100vw;
-    height: 100vh;
 }
 .header {
-    width: 100%;
     text-align: center;
     font-family: 'Lulo Clean', 'Gill Sans', 'Trebuchet MS', sans-serif;
     text-transform: uppercase;
+    top: 20px;
+    position: relative;
 }
 @keyframes navigation {
     0% {
@@ -78,6 +77,6 @@ body {
     position: fixed;
     width: 70%;
     height: 100vh;
-    top: 30px;
+    top: 60px;
     overflow: scroll;
 }
